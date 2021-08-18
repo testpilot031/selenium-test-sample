@@ -1,0 +1,4 @@
+# main.py	
+urls = ["https://a.a.a.a","https://b.b.b.b"]
+interval_sec = 30
+repeat_count = 120
