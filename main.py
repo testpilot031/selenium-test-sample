@@ -59,7 +59,7 @@ def send_request(url,interval_sec,repeat_count):
     request_method_end_time = None
 
 
-    selector = "#Newloginbtn > table > tbody > tr > td > a"
+    selector = "#xxxx > table > tbody > tr > td > a"
     # Trueならエラーを起こすための設定
     if test_mode == 3:
         selector = "abcdefg"
@@ -79,7 +79,7 @@ def send_request(url,interval_sec,repeat_count):
     dest_address = url.replace('http://', '')
     dest_address = dest_address.replace('.', '_')
     dest_address = dest_address.replace('/', '')
-    filename = '/home/ssm-user/selenium-script/get_responsetime_' + dest_address + "_"
+    filename = '/xxx/xxx' + dest_address + "_"
     filename += datetime.now(JST).strftime('%Y%m%d%H%M%S') + '.log'
 
 
@@ -196,7 +196,7 @@ def main():
             print("test_mode: " + str(test_mode) + " is normal")
         if test_mode == 2:
             print("test_mode: " + str(test_mode) + " is unreach")
-            urls = ["http://10.168.248.100","http://10.168.248.100"]
+            urls = ["http://xx.x.x.x","http://y.y.y.y"]
         if test_mode == 3:
             print("test_mode: " + str(test_mode) + " is no such element")
     pid = os.getpid()
